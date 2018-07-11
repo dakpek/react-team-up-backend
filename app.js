@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const serv = require('http').Server(app);
-const cors = require('cors');
+const cors = require('koa-cors');
 
 app.use(cors());
 app.get('/',function(req, res) {
