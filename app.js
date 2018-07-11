@@ -3,8 +3,7 @@ const app = express();
 const serv = require('http').Server(app);
 const cors = require('cors');
 
-app.use(cors({origin: 'http://localhost:3000'}));
-app.use(cors({origin: 'http://localhost:3001'}));
+app.use(cors());
 app.get('/',function(req, res) {
 	res.send('')
 });
